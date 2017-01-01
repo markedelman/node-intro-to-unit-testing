@@ -33,7 +33,7 @@ describe('adder', function() {
     // prove that an error is raised for bad inputs
     badInputs.forEach(function(input) {
       (function() {
-          adder(input[0], input[1])
+          adder(input.a, input.b);
       }).should.throw(Error);
     });
   });
